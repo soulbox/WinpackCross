@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -145,8 +146,7 @@ from[User] a join UserPermission b on a.Id = b.UserId";
                 return dön;
             }
         }
-
-        public Task<List<DB_Machine>> MakineListele
+        public static  Task<List<DB_Machine>> MakineListele
         {
             get
             {
@@ -191,7 +191,7 @@ order by Makina ";
             }
         }
 
-
+        public static int MakineDeployCount { get => MakineListele.Result.Sum(x => x.Count); }
 
     }
 }

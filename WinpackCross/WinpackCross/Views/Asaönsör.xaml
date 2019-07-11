@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinpackCross.Views.Asaönsör"
+             Title="Asansör">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#E75424"/>
+                <Setter Property="TextColor" Value="WhiteSmoke" />
+                <Setter Property="BorderRadius" Value="10"/>
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="WidthRequest" Value="54"/>
+                <Setter Property="HeightRequest" Value="54" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <StackLayout  Padding="10"   BackgroundColor="DarkSlateBlue" >
+            <ListView x:Name="list" RowHeight="350" SelectionMode="None"   ItemsSource="{Binding Items}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal" Padding="20,10,0,0" Spacing="0" >
+                                    <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"/>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Firebrick" HeightRequest="2"/>
+                               
+                                <!--Imagecell  1-->
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20" BackgroundColor="Transparent">
+                                    <StackLayout >
+                                        <Image Source="{Binding imgSource}"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label Text="Kapı" FontSize="Large" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                        <Label Text="{Binding KapıDetail}" FontSize="Medium" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                    </StackLayout>                                    
+                                </StackLayout>
+
+                                <!--Imagecell  2-->
+
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20" BackgroundColor="Transparent">
+                                    <StackLayout >
+                                        <Image Source="{Binding imginfo}"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label Text="Asansör Durumu" FontSize="Large" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                        <Label Text="{Binding Durum}" FontSize="Medium" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                    </StackLayout>
+                                </StackLayout>
+ 
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="0,10,0,0" Spacing="5" BackgroundColor="Transparent">
+                                    <Button 
+                                        Text="Çağır" 
+                                        HorizontalOptions="CenterAndExpand" CommandParameter="{Binding Title}" Clicked="btnCagirClicked" /> 
+                                </StackLayout>
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="0,10,0,0" Spacing="5" BackgroundColor="Transparent">
+                                    <Button 
+                                        Text="Kapı Aç" 
+                                        HorizontalOptions="CenterAndExpand" CommandParameter="{Binding Title}"
+                                        IsVisible="{Binding Visible}"
+                                        Clicked="btnKapıAç"  />
+                                    <Button  
+                                        Text="Kapı Kapat"  
+                                        HorizontalOptions="CenterAndExpand" CommandParameter="{Binding Title}"
+                                        IsVisible="{Binding Visible}"
+                                        Clicked="btnKapıKapat"  />
+                                    <Button  
+                                        Text="Kapı Durdur"  
+                                        HorizontalOptions="CenterAndExpand" CommandParameter="{Binding Title}" 
+                                        IsVisible="{Binding Visible}"
+                                        Clicked="btnKapıDurdur"  />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="EndAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                
+                <Label x:Name="txtDurum"  Text="Durum:" FontSize="Large"/>
+                <Button Text="Refresh List" Clicked="Button_Clicked" IsVisible="False"/>
+                <ActivityIndicator x:Name="activator"                      
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           IsRunning="False"
+                           IsVisible="False"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,390 +5,395 @@
 
     <ContentPage.Content>
         <!--<ScrollView>-->
-            <StackLayout x:Name="AydınlatmaLayout"  Orientation="Vertical">
-          
-                
-                <StackLayout>
-                    <TableView Intent="Form" x:Name="DepoView" BindingContext="{Binding .}" >
-                        <TableRoot>
-                            <TableSection Title="Depo Katı">
-                                <ViewCell  >
-                                    <StackLayout  
+        <StackLayout x:Name="AydınlatmaLayout"  Orientation="Vertical">
+
+            <StackLayout>
+                <TableView Intent="Form" x:Name="DepoView" BindingContext="{Binding .}" >
+                    <TableRoot>
+                        <TableSection Title="Depo Katı">
+                            <ViewCell  >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [0].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [0].imageName}"                                              CommandParameter="{Binding [0].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_1"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [1].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [1].imageName}"                                              CommandParameter="{Binding [1].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_2"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [2].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [2].imageName}"                                              CommandParameter="{Binding [2].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_3"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [3].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [3].imageName}"                                              CommandParameter="{Binding [3].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_4"/>
-                                    </StackLayout>
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [4].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [4].imageName}"                                              CommandParameter="{Binding [4].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_5"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [5].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [5].imageName}"                                              CommandParameter="{Binding [5].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1_6"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [6].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [6].imageName}"                                              CommandParameter="{Binding [6].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat1"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                            </TableSection>
-                            <TableSection Title="imalat">
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection Title="imalat">
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [7].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [7].imageName}"                                              CommandParameter="{Binding [7].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_1"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [8].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [8].imageName}"                                              CommandParameter="{Binding [8].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_2"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [9].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [9].imageName}"                                              CommandParameter="{Binding [9].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_3"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [10].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [10].imageName}"                                              CommandParameter="{Binding [10].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_4"/>
-                                    </StackLayout>
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [11].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [11].imageName}"                                              CommandParameter="{Binding [11].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_5"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [12].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [12].imageName}"                                              CommandParameter="{Binding [12].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_6"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [13].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [13].imageName}"                                              CommandParameter="{Binding [13].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2_7"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [14].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [14].imageName}"                                              CommandParameter="{Binding [14].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat2"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                            </TableSection>
-                            <TableSection Title="Çatı">
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection Title="Çatı">
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [15].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [15].imageName}"                                              CommandParameter="{Binding [15].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_1"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [16].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [16].imageName}"                                              CommandParameter="{Binding [16].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_2"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [17].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [17].imageName}"                                              CommandParameter="{Binding [17].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_3"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [18].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [18].imageName}"                                              CommandParameter="{Binding [18].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_4"/>
-                                    </StackLayout>
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [19].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [19].imageName}"                                              CommandParameter="{Binding [19].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_5"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [20].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [20].imageName}"                                              CommandParameter="{Binding [20].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3_6"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [21].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [21].imageName}"                                              CommandParameter="{Binding [21].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Kat3"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                            </TableSection>
-                            <TableSection Title="Bina">
-                                <ViewCell   >
-                                    <StackLayout  
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection Title="Bina">
+                            <ViewCell   >
+                                <StackLayout  
                                                         Orientation="Horizontal" 
                                                         Padding="15,0,25,0" >
 
-                                        <Label 
+                                    <Label 
                                                             Text="{Binding [22].Text}"
                                                             VerticalOptions="Center" />
-                                        <ImageButton
+                                    <ImageButton
                                                             Clicked="ImageButton_Clicked"  
                                                             Source="{Binding [22].imageName}"                                              CommandParameter="{Binding [22].Name}"
                                                             HorizontalOptions="EndAndExpand"
                                             x:Name="Hepsi"/>
-                                    </StackLayout>
+                                </StackLayout>
 
-                                </ViewCell>
-                            </TableSection>
-                        </TableRoot>
-                    </TableView>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
 
-                </StackLayout>
             </StackLayout>
+            <ActivityIndicator x:Name="activator" 
+                               HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           IsRunning="False"
+                           IsVisible="False"/>
+
+        </StackLayout>
         <!--</ScrollView>-->
     </ContentPage.Content>
 </ContentPage>

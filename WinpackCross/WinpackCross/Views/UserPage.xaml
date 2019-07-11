@@ -7,13 +7,20 @@
             <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
                 <TableView Intent="Form" >
                     <TableRoot>
-                        <TableSection x:Name="tblTitle" Title="Profil">
+                        <TableSection x:Name="tblTitle" Title="Profil" TextColor="#FF9800">
                             <TextCell x:Name="txtNameandDescription" Text="Adı Soyadı" Detail="Açıklama"/>
                             <TextCell x:Name="txtUsername" Text="Kullanıcı Adı" Detail="Kullanıcı Adı"/>
                             <TextCell x:Name="txtEposta" Text="Eposta" Detail="eposta"/>
                             <TextCell x:Name="txtTarih" Text="Katılım Tarihi" Detail="Tarih"/>
                             <TextCell x:Name="txtTel" Text="Telefon" Detail="Telefon"/>
                             <SwitchCell x:Name="swAdmin" Text="Yönetici" On="False" IsEnabled="False"/>
+                        </TableSection>
+                        <TableSection x:Name="UserPermission" Title="Yetkileri" TextColor="#FF9800">
+                            <SwitchCell  Text="Raporlama" On="{Binding [0].Raporlama}" IsEnabled="False"/>
+                            <SwitchCell  Text="Asansör" On="{Binding [0].Asansör}" IsEnabled="False"/>
+                            <SwitchCell  Text="Aydınlatma" On="{Binding [0].Aydınlatma}" IsEnabled="False"/>
+                            <SwitchCell  Text="Alarm" On="{Binding [0].Alarm}" IsEnabled="False"/>
+                            <SwitchCell  Text="Ayarlar" On="{Binding [0].Ayarlar}" IsEnabled="False"/>
                         </TableSection>
                     </TableRoot>
                 </TableView>

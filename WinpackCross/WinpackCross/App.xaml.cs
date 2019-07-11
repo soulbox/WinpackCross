@@ -1,6 +1,6 @@
-﻿
-using System;
-using WinpackCross.Views;
+﻿using System;
+using System.Net;
+using WebDav;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,22 +10,28 @@ namespace WinpackCross
     public partial class App : Application
     {
 
+
         public App()
         {
 
+
             InitializeComponent();
 
-            //if(CrossAutoLogin.Current.UserIsSaved)
-            //MainPage = new MasterPage();
-            //else
-            MainPage = new NavigationPage(new MainPage());
-            //MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new  Login());
+            MainPage = new Login();
+            //MainPage = new Views.IsıNem ();
+
+
 
         }
 
-        protected override void OnStart()
+
+        protected  override void OnStart()
         {
-            // Handle when your app starts
+
+            // Handle when your app start
+
+
         }
 
         protected override void OnSleep()

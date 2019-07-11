@@ -14,27 +14,11 @@ namespace WinpackCross.Views
     {
         public class MasterPageItem
         {
-            public string Title
-            {
-                get;
-                set;
-            }
-            public string Icon
-            {
-                get;
-                set;
-            }
-            public Type TargetType
-            {
-                get;
-                set;
-            }
+            public string Title { get; set; }
+            public string Icon { get; set; }
+            public Type TargetType { get; set; }
         }
-        public List<MasterPageItem> menuList
-        {
-            get;
-            set;
-        }
+        public List<MasterPageItem> menuList { get; set; }
         public MasterPage()
         {
             InitializeComponent();
@@ -58,13 +42,27 @@ namespace WinpackCross.Views
             {
                 Title = "Üretim",
                 Icon = "Uretim.png",
-                TargetType = typeof(Üretim )
+                TargetType = typeof(Üretim)
+            });
+            menuList.Add(new MasterPageItem()
+            {
+                Title = "Isı ve Nem",
+                Icon = "IsiNem.png",
+                TargetType = typeof(IsıNem)
+            });
+            menuList.Add(new MasterPageItem()
+            {
+                Title = "Asansör",
+                Icon = "Elevator.png",
+                TargetType = typeof(Asaönsör)
             });
             // Setting our list to be ItemSource for ListView in MainPage.xaml  
             navigationDrawerList.ItemsSource = menuList;
             // Initial navigation, this can be used for our home page  
             //var asd = new UserPage();
+            
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Üretim)));
+            
         }
 
         private void NavigationDrawerList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

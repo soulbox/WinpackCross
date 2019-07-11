@@ -10,10 +10,23 @@
     <Company>Rossmann Engineering</Company>
     <Product>EasyModbusTCP</Product>
     <Description>EasyModbusTCP library for .NET Core</Description>
+    <OutputType>Library</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;1705;169</NoWarn>
+    <WarningLevel>0</WarningLevel>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <WarningLevel>0</WarningLevel>
+    <Optimize>true</Optimize>
   </PropertyGroup>
 
 </Project>

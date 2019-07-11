@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinpackCross.Views.ListTest">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DarkSlateBlue">
+            <ListView x:Name="listes" RowHeight="90">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Bölge" HorizontalOptions="CenterAndExpand"/>
+                                <StackLayout Orientation="Horizontal" Padding="5"   Spacing="10">
+                                <Image Source="{Binding Icon}" VerticalOptions="StartAndExpand"/>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Label}"/>
+                                    <Label Text="{Binding Value}"/>
+                                </StackLayout>
+                                <Image Source="{Binding Icon}" VerticalOptions="StartAndExpand"/>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Label}"/>
+                                    <Label Text="{Binding Value}"/>
+                                </StackLayout>
+                            </StackLayout>
+                            </StackLayout>
+                        </ViewCell> 
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

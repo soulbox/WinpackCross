@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinpackCross.Views.IsıNem">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="WhiteSmoke"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout  
+            Orientation="Vertical" 
+            VerticalOptions="CenterAndExpand" 
+            Padding="10" 
+            BackgroundColor="DarkSlateBlue">
+            <ListView x:Name="listes" RowHeight="80" SelectionMode="None" IsGroupingEnabled="True" >
+                <ListView.GroupHeaderTemplate >
+                    <DataTemplate >
+                        <ViewCell >
+                            <Label Text="{Binding Kat}"
+                                   FontSize="Large"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="CenterAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Bölge}" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                                <StackLayout Orientation="Horizontal" Padding="5"   Spacing="10">
+                                    <Image Source="{Binding Isicon}" VerticalOptions="StartAndExpand"/>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Isı"/>
+                                        <Label Text="{Binding Isı,StringFormat=' {0} °C'}"/>
+                                    </StackLayout>
+                                    <Image Source="{Binding Nemicon}" VerticalOptions="StartAndExpand"/>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="Nem"/>
+                                        <Label Text="{Binding Nem,StringFormat='%{0}Rh'}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            <Button Text="Değiştir" Clicked="Button_Clicked" IsVisible="False" />
+            <ActivityIndicator x:Name="activator" 
+                               HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           IsRunning="False" 
+                           IsVisible="False"/>
+
+
+
+
+
+            <!--<ListView x:Name="ısınemlist" RowHeight="350" SelectionMode="None" >
+                --><!--<ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Kat}" FontSize="Large" TextColor="WhiteSmoke"  />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>--><!--
+
+                <ListView.ItemTemplate>                    
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                --><!--<StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal" Padding="20,10,0,0" Spacing="0" >
+                                    <Label Text="{Binding Kat}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"/>
+                                </StackLayout>
+                                <StackLayout BackgroundColor="Firebrick" HeightRequest="2"/>--><!--
+                                
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20" BackgroundColor="Transparent">
+                                    <StackLayout >
+                                        <Image Source="{Binding Isicon}"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label Text="{Binding Bölge}" FontSize="Large" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                        <Label Text="{Binding Isı}" FontSize="Medium" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                    </StackLayout> 
+                                </StackLayout>
+
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20" BackgroundColor="Transparent">
+                                    <StackLayout >
+                                        <Image Source="{Binding Nemicon}"/>
+                                    </StackLayout>
+                                    <StackLayout BackgroundColor="Transparent">
+                                        <Label Text="{Binding Bölge}" FontSize="Large" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                        <Label Text="{Binding Nem}" FontSize="Medium" VerticalOptions="CenterAndExpand" TextColor="WhiteSmoke" />
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                            </StackLayout>
+                        </ViewCell>                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

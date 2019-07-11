@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinpackCross.iOS", "Winpack
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinpackCross", "WinpackCross\WinpackCross\WinpackCross.csproj", "{9E5E28EB-49D8-42C4-9BF3-F6EEEF7280CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyModbusTCPCore", "EasyModbusTCP.NET-master\EasyModbusTCP.NET-master\EasyModbusTCPCore\EasyModbusTCPCore.csproj", "{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -69,9 +67,9 @@ Global
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhone.Deploy.0 = Ad-Hoc|iPhone
-		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhoneSimulator
+		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhone
+		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhone
+		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhone
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.AppStore|Any CPU.Build.0 = AppStore|iPhone
 		{968F09FD-D7C0-4055-908C-1CA56E9EF103}.AppStore|Any CPU.Deploy.0 = AppStore|iPhone
@@ -135,30 +133,6 @@ Global
 		{9E5E28EB-49D8-42C4-9BF3-F6EEEF7280CA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{9E5E28EB-49D8-42C4-9BF3-F6EEEF7280CA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{9E5E28EB-49D8-42C4-9BF3-F6EEEF7280CA}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|Any CPU.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|iPhone.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|iPhone.Build.0 = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{5459EBE9-DBDD-4AEA-B1D2-965C0C9DDA9B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
