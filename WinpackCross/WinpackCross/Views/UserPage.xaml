@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinpackCross.Views.UserPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <TableView Intent="Form" >
+                    <TableRoot>
+                        <TableSection x:Name="tblTitle" Title="Profil">
+                            <TextCell x:Name="txtNameandDescription" Text="Adı Soyadı" Detail="Açıklama"/>
+                            <TextCell x:Name="txtUsername" Text="Kullanıcı Adı" Detail="Kullanıcı Adı"/>
+                            <TextCell x:Name="txtEposta" Text="Eposta" Detail="eposta"/>
+                            <TextCell x:Name="txtTarih" Text="Katılım Tarihi" Detail="Tarih"/>
+                            <TextCell x:Name="txtTel" Text="Telefon" Detail="Telefon"/>
+                            <SwitchCell x:Name="swAdmin" Text="Yönetici" On="False" IsEnabled="False"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

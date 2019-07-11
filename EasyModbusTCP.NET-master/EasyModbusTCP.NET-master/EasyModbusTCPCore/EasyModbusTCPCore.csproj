@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>4.5.1.1</Version>
+    <Authors>Stefan Roßmann</Authors>
+    <Company>Rossmann Engineering</Company>
+    <Product>EasyModbusTCP</Product>
+    <Description>EasyModbusTCP library for .NET Core</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1705;169</NoWarn>
+  </PropertyGroup>
+
+</Project>

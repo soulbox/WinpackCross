@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinpackCross.Views.Üretim">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="navigationDrawerList" RowHeight="60" SeparatorVisibility="None" BackgroundColor="#193F78" ItemSelected="NavigationDrawerList_ItemSelected">
+                <ListView.Header>
+                    <ContentView Padding="0,5" >
+                        <Label Text="Makinalar" TextColor="WhiteSmoke" FontSize="Medium" HorizontalOptions="Center"  VerticalOptions="Center" />
+                    </ContentView>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell DetailColor="WhiteSmoke" TextColor="WhiteSmoke"  ImageSource="Makine" Text="{Binding Makina}" Detail="{Binding Count, StringFormat='Üretim Miktarı: {0:F0}'}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.FooterTemplate>
+                    <DataTemplate>
+                        <ContentView Padding="0,10">
+
+                        </ContentView>
+                    </DataTemplate>
+                </ListView.FooterTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
