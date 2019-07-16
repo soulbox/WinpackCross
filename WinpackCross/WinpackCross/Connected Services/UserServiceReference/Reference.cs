@@ -540,11 +540,11 @@ namespace UserServiceReference
         {
             if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_IUserService))
             {
-                return new System.ServiceModel.EndpointAddress("http://192.168.1.115:9001/User");
+                return new System.ServiceModel.EndpointAddress("http://192.168.1.112:9001/User");
             }
             if ((endpointConfiguration == EndpointConfiguration.NetTcpBinding_IUserService))
             {
-                return new System.ServiceModel.EndpointAddress("net.tcp://192.168.1.115:9002/User");
+                return new System.ServiceModel.EndpointAddress("net.tcp://192.168.1.112:9002/User");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

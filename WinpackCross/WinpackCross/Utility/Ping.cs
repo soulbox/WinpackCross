@@ -29,6 +29,12 @@ namespace WinpackCross
                 //MessageBox.Show("Error pinging host:'" + hostUri + ":" + portNumber.ToString() + "'");
                 return false;
             }
+            catch (System.Exception ex)
+            {
+                PingError?.Invoke($"Host:{hostUri }:{portNumber}\n" + ex.ToString());
+                //MessageBox.Show("Error pinging host:'" + hostUri + ":" + portNumber.ToString() + "'");
+                return false;               
+            }
         }
 
 

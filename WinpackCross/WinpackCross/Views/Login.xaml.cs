@@ -131,10 +131,10 @@ namespace WinpackCross
             {
                 await DisplayAlert("internet", "İnternet veya local wifi Bağlantısı Yok.", "Tamam");
                 return;
-            }
+            }          
             if (Ping.PingHost("192.168.1.190", 1433))
             {
-                var mypc = Ping.PingHost("192.168.1.115", 9005);
+                var mypc = Ping.PingHost("192.168.1.112", 9005);
                 var server = Ping.PingHost("192.168.1.190", 9005);
                 if (!server && !mypc)
                 {

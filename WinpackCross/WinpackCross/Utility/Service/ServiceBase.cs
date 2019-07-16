@@ -34,15 +34,15 @@ namespace WinpackCross.Utility
         const string LocalIP = "192.168.1.190";
 
         //private string GetIP => Ping.PingHost(LocalIP, 1433) ? LocalIP : DbModel.DBGlobal.GetGlobalIP.İp;
-        //private string GetIP => Ping.PingHost(LocalIP, 1433) ? Ping.PingHost(LocalIP, 9005) ? LocalIP : "192.168.1.115" : DbModel.DBGlobal.GetGlobalApi.İp;
+        //private string GetIP => Ping.PingHost(LocalIP, 1433) ? Ping.PingHost(LocalIP, 9005) ? LocalIP : "192.168.1.112" : DbModel.DBGlobal.GetGlobalApi.İp;
 
         private string GetIP
         {
             get
             {
                 string dön= "";
-                if (Ping.PingHost("192.168.1.115", 9005))
-                    return dön = "192.168.1.115";
+                if (Ping.PingHost("192.168.1.112", 9005))
+                    return dön = "192.168.1.112";
                 if (Ping.PingHost(LocalIP, 9005))
                     return dön = LocalIP;
                 else
@@ -51,7 +51,7 @@ namespace WinpackCross.Utility
             }
         }
 
-        //private string GetIP => "192.168.1.115";
+        //private string GetIP => "192.168.1.112";
 
 
 

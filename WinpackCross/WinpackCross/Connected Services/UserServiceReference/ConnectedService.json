@@ -2,7 +2,7 @@
   "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
   "Version": "15.0.20628.921",
   "ExtendedData": {
-    "Uri": "http://192.168.1.115:9001/User",
+    "Uri": "http://192.168.1.112:9001/User",
     "Namespace": "UserServiceReference",
     "SelectedAccessLevelForGeneratedClass": "Public",
     "GenerateMessageContract": false,
